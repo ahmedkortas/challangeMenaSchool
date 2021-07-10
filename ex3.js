@@ -5,19 +5,15 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 JSON.parse()
 Docs=>
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
-
 */
-
+export default obj;
 
 function Stringify(params) {
-    //TODO:
+  //TODO:
 }
 
 function parseMe(str) {
-    //TODO
+  //TODO
 }
 
-
-let obj={Stringify,parseMe};
-
-module.exports = obj;
+let obj = { Stringify, parseMe };
