@@ -1,4 +1,4 @@
-//module.exports = reverseNestedArray;
+export default reverseNestedArray;
 
 /**Create a function that will reverse all the element inside a nested array
 
