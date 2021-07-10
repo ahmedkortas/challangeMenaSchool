@@ -13,9 +13,9 @@ function reverseNestedArray(array) {
     let result=[];
     for(let i=array.length-1; i===0; i--){
 if (Array.isArray(array[i])){
-    result.push(array.revers());
+    result.push(array[i].revers());
 } else 
-array.push(array[i]);
+result.push(array[i]);
     }
     return result;
 } 
