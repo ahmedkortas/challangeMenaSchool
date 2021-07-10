@@ -9,7 +9,15 @@ exp
  */
 
 function reverseNestedArray(array) {
+    let newArr = [];
     //TODO
+    for(let x = array.length - 1; x >= 0; x--){
+        if(Array.isArray(array[x])){
+            array[x] = reverseNestedArray(array[x]);
+        }
+        newArr.push(array[x]);
+    }
+    return newArr;
 }
 
 
