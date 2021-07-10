@@ -27,7 +27,7 @@ const contains = (arr, num) => {
     return true;
   }
 };
-console.log(contains(array, 15));
+console.log(contains(array, 0));
 /*
 function contains(arr, arg) {
   let totalArr = 0;
