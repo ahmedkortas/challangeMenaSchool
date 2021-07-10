@@ -1,3 +1,5 @@
+module.exports = reverseNestedArray;
+
 /**Create a function that will reverse all the element inside a nested array
 
 exp
@@ -9,8 +11,7 @@ exp
  */
 
 function reverseNestedArray(array) {
-    //TODO
+  return array.reverse();
 }
 
-
-module.exports = reverseNestedArray;
+console.log(reverseNestedArray([1, 2, 3, 4]));
