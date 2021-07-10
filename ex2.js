@@ -7,3 +7,8 @@ contains(array,0)=> return true
 contains(array,-1)=> return false 
 
 */
+
+let array = [15,6,[5,1],[10,[20,[0]]]];
+array = array.flat(Infinity);
+array.includes(0);
+array.includes(-1);
