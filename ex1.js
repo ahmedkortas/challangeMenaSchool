@@ -15,3 +15,4 @@ function reverseNestedArray(array) {
 }
 
 console.log(reverseNestedArray([1, 2, 3, 4]));
+console.log(reverseNestedArray([9, [5, [10, 30]], 6]));
