@@ -10,7 +10,18 @@ exp
 
 function reverseNestedArray(array) {
     //TODO
-}
+    let result=[];
+    for(let i=array.length-1; i===0; i--){
+if (Array.isArray(array[i])){
+    result.push(array.revers());
+} else 
+array.push(array[i]);
+    }
+    return result;
+} 
+ console.log(reverseNestedArray([1,[2,3],4]));
+
+
 
 
 module.exports = reverseNestedArray;
