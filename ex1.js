@@ -1,3 +1,5 @@
+export default reverseNestedArray;
+
 /**Create a function that will reverse all the element inside a nested array
 
 exp
@@ -7,10 +9,14 @@ exp
 [9,[5,[10,30]],6]=> [6,[[30,10],5]9]
  
  */
+var array = [9, [5, [10, 30]], 6];
 
-function reverseNestedArray(array) {
-    //TODO
-}
+var test = array
+  .map(function reverseNestedArray(items) {
+    items.reverse();
+  })
+  .reverse();
 
-
-module.exports = reverseNestedArray;
+console.log(test);
+console.log(reverseNestedArray([1, 2, 3, 4]));
+console.log(reverseNestedArray([9, [5, [10, 30]], 6]));
