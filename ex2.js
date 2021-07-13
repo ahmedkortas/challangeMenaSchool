@@ -7,3 +7,7 @@ contains(array,0)=> return true
 contains(array,-1)=> return false 
 
 */
+
+let array = [15, 6, [5, 1], [10, [20, [0]]]];
+array = array.flat(4);
+array.includes(6);
