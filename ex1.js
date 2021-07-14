@@ -9,7 +9,21 @@ exp
  */
 
 function reverseNestedArray(array) {
+    // create new empty arr
+    let newArr = [];
     //TODO
+    // loop on array but reverse
+    for(let x = array.length - 1; x >= 0; x--){
+        // if the current index === array 
+        // will Recursion the function and parameter = current index 
+        if(Array.isArray(array[x])){
+            array[x] = reverseNestedArray(array[x]);
+        }
+        // add the value in new array
+        newArr.push(array[x]);
+    }
+    
+    return newArr;
 }
 
 
