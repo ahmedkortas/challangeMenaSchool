@@ -9,18 +9,18 @@ contains(array,-1)=> return false
 */
 
 let array = [15,6,[5,1],[10,[20,[0]]]];
-array = array.flat(Infinity);
-array.includes(0);
-array.includes(-1);
+let newArray = search(array);
+newArray.includes(0);
+newArray.includes(-1);
 
 
-// uncomplete
-//
-// let search = (array) => {
-//     for(let x = 0; x > array.length; x++){
-//         if(Array.isArray(array[x])) {
-//             array[x] = search(array[x]);
-//         }
-//     }
-//     return array;
-// }
+// complete
+
+let search = (array) => {
+    for(let x = 0; x < array.length; x++){
+        if(Array.isArray(array[x])) {
+            array[x] = search(array[x])
+        }
+    }
+    return array.flat();
+}
