@@ -8,7 +8,7 @@ exp
  
  */
 
-function reverseNestedArray(array) {
+/*function reverseNestedArray(array) {
     //TODO
     let result=[];
     for(let i=array.length-1; i===0; i--){
@@ -19,6 +19,21 @@ result.push(array[i]);
     }
     return result;
 } 
+ console.log(reverseNestedArray([1,[2,3],4])); */
+
+function reverseNestedArray(array) {
+    //TODO
+    let result=[];
+    for(let i=0; i<=array.length; i++){
+if (Array.isArray(array[i])){
+
+    reverseNestedArray(array[i]);
+}   
+ 
+ return array.reverse();
+
+}
+}
  console.log(reverseNestedArray([1,[2,3],4]));
 
 
